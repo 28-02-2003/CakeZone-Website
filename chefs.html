@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="chefs.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+
+
+
+
+
+
+    <script>
+        (function ($) {
+            "use strict";
+        
+            // Sticky Navbar
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 40) {
+                    $('.navbar').addClass('sticky-top');
+                } else {
+                    $('.navbar').removeClass('sticky-top');
+                }
+            });
+            
+            // Dropdown on mouse hover
+            $(document).ready(function () {
+                function toggleNavbarMethod() {
+                    if ($(window).width() > 992) {
+                        $('.navbar .dropdown').on('mouseover', function () {
+                            $('.dropdown-toggle', this).trigger('click');
+                        }).on('mouseout', function () {
+                            $('.dropdown-toggle', this).trigger('click').blur();
+                        });
+                    } else {
+                        $('.navbar .dropdown').off('mouseover').off('mouseout');
+                    }
+                }
+                toggleNavbarMethod();
+                $(window).resize(toggleNavbarMethod);
+            });
+        
+            
+        })(jQuery);
+            </script>
+ 
+</head>
+<body>
+    <section> 
+        <div class="d-none d-lg-block">
+            <div class="d-flex align-items-center justify-content-center">   
+                <a href="" class="btn btn-warning border-inner rounded-0 w-100 py-5 px-5 text-white" aria-required="">
+                    <h1 style="font-family: Bodoni MT Black;"><i class="fa fa-birthday-cake fs-3 text-dark"></i>CAKEZONE</h1>
+                </a>   
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark shadow-sm py-3 py-lg-0 px-3 px-lg-0">
+            <a href="index.html" class="navbar-brand d-block d-lg-none">
+                <h1 class="m-0 text-uppercase text-white" style="font-size: 30px;"><i class="fa fa-birthday-cake fs-1 text-warning me-3"></i>CakeZone</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto mx-lg-auto py-0">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About Us</a>
+                    <a href="menu.html" class="nav-item nav-link">Menu & Pricing</a>
+                    <a href="chefs.html" class="nav-item nav-link active">Master Chefs</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="service.html" class="dropdown-item">Our Service</a>
+                            <a href="testimony.html" class="dropdown-item">Testimonial</a>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <section>
+        <div class="container-fluid bg-dark pt-4 pb-4">
+            <div class="container">
+                <div class="text-center">
+                    <h1 class="display-4 text-uppercase text-white" id="di">MASTER CHEFS</h1>
+                    <a href="">Home</a>
+                    <i class="far fa-square text-warning px-2" ></i>
+                    <a href="">Master Chefs</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container-fluid pt-5 pb-5">
+            <div class="container">
+                <div class="text-center">
+                    <h2 style="color: goldenrod; font-family: Matura MT Script Capitals;">Team Members</h2>
+                    <h1 style="font-weight: bolder;">OUR MASTER CHEFS</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container pt-5 pb-5">
+            <div class="row">
+                <!-- Card 1 -->
+                <div class="col-md-4 pt-5">
+                    <div class="card">
+                        <div class="team-item overflow-hidden">
+                            <img src="images/cake chef 1.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body bg-dark border-inner" style="text-align: center;">
+                            <h1 class="card-title" style="color: goldenrod;">FULL NAME</h1>
+                            <p class="card-text text-white">Destignation</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-md-4 pt-5">
+                    <div class="card">
+                        <div class="team-item overflow-hidden">
+                            <img src="images/cake chef 2.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body bg-dark border-inner" style="text-align: center;">
+                            <h1 class="card-title" style="color: goldenrod;">FULL NAME</h1>
+                            <p class="card-text text-white">Destignation</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-md-4 pt-5">
+                    <div class="card">
+                        <div class="team-item overflow-hidden">
+                            <img src="images/cake chef 3.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body bg-dark border-inner" style="text-align: center;">
+                            <h1 class="card-title" style="color: goldenrod;">FULL NAME</h1>
+                            <p class="card-text text-white">Destignation</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="col-md-4 pt-5">
+                    <div class="card">
+                        <div class="team-item overflow-hidden">
+                            <img src="images/cake chef 4.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body bg-dark border-inner" style="text-align: center;">
+                            <h1 class="card-title" style="color: goldenrod;">FULL NAME</h1>
+                            <p class="card-text text-white">Destignation</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 5 -->
+                <div class="col-md-4 pt-5">
+                    <div class="card">
+                        <div class="team-item overflow-hidden">
+                            <img src="images/cake chef 5.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body bg-dark border-inner" style="text-align: center;">
+                            <h1 class="card-title" style="color: goldenrod;">FULL NAME</h1>
+                            <p class="card-text text-white">Destignation</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 6 -->
+                <div class="col-md-4 pt-5">
+                    <div class="card">
+                        <div class="team-item overflow-hidden">
+                            <img src="images/cake chef 6.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body bg-dark border-inner" style="text-align: center;">
+                            <h1 class="card-title" style="color: goldenrod;">FULL NAME</h1>
+                            <p class="card-text text-white">Destignation</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 7 -->
+                <div class="col-md-4 pt-5">
+                    <div class="card">
+                        <div class="team-item overflow-hidden">
+                            <img src="images/cake chef 7.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body bg-dark border-inner" style="text-align: center;">
+                            <h1 class="card-title" style="color: goldenrod;">FULL NAME</h1>
+                            <p class="card-text text-white">Destignation</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 8 -->
+                <div class="col-md-4 pt-5">
+                    <div class="card">
+                        <div class="team-item overflow-hidden">
+                            <img src="images/cake chef 8.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body bg-dark border-inner" style="text-align: center;">
+                            <h1 class="card-title" style="color: goldenrod;">FULL NAME</h1>
+                            <p class="card-text text-white">Destignation</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 9 -->
+                <div class="col-md-4 pt-5">
+                    <div class="card">
+                        <div class="team-item overflow-hidden">
+                            <img src="images/cake chef 9.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body bg-dark border-inner" style="text-align: center;">
+                            <h1 class="card-title" style="color: goldenrod;">FULL NAME</h1>
+                            <p class="card-text text-white">Destignation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer bg-secondary">
+        <div class="container-fluid pt-5 text-secondary">
+            <div class="container">
+                <div class="row gx-5">
+                    <div class="col-md-3 col-lg-4 mt-lg-n5 pt-5 pb-5">
+                       <div class="d-flex flex-column align-items-center justify-content-center border-inner bg-warning p-4">
+                            <a href="" class="">
+                            <h1 style="color: white; text-align: center;" id="ci"><i class="fa fa-birthday-cake text-dark ml-2"></i>CAKEZONE</h1>
+                            </a>
+                            <p class="mt-3 text-white">Lorem diam sit erat dolor elitr et, diam lorem justo labore amet clita labore stet eos magna sit. Elitr dolor eirmod duo tempor lorem, elitr clita ipsum sea. Nonumy rebum et takimata ea takimata amet gubergren, erat rebum magna lorem stet eos. Diam amet et kasd eos duo dolore </p>
+                       </div>
+                    </div>
+                    <div class="col-md-6 col-lg-8">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-12 mb-5">
+                                <h3 style="color: goldenrod;">GET IN TOUCH</h3>
+                                <div class="d-flex mb-2 pt-3">
+                                    <i class="bi bi-geo-alt text-warning"></i>
+                                    <p class="text-white">123 Street, New York, USA</p>
+                                </div>
+                                <div class="d-flex mb-2">
+                                    <i class="bi bi-envelope-open text-warning"></i>
+                                    <p class="text-white">info@example.com</p>
+                                </div>
+                                <div class="d-flex mb-2">
+                                    <i class="bi bi-telephone text-warning"></i>
+                                    <p class="text-white">+012 345 67890</p>
+                                </div>
+                                <div class="d-flex mt-4">
+                                    <a href="" class="btn btn-lg btn-warning btn-lg-square border-inner rounded-0 py-2 px-4 me-2"><i class="bi bi-twitter text-white"></i></a>
+                                    <a href="" class="btn btn-lg btn-warning btn-lg-square border-inner rounded-0 py-2 px-4 me-2"><i class="bi bi-facebook text-white"></i></a>
+                                    <a href="" class="btn btn-lg btn-warning btn-lg-square border-inner rounded-0 py-2 px-4 me-2"><i class="bi bi-linkedin text-white"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-12 pt-0 mb-5">
+                                <h3 style="color: goldenrod;">QUICK LINES</h3>
+                                <div class="d-flex flex-column justify-content-start mb-2">
+                                    <a href="" class="text-white pt-3" style="text-decoration: none;"><i class="bi bi-arrow-right text-warning me-2"></i>Home</a>
+                                    <a href="" class="text-white pt-3" style="text-decoration: none;"><i class="bi bi-arrow-right text-warning me-2"></i>About Us</a>
+                                    <a href="" class="text-white pt-3" style="text-decoration: none;"><i class="bi bi-arrow-right text-warning me-2"></i>Our Services</a>
+                                    <a href="" class="text-white pt-3" style="text-decoration: none;"><i class="bi bi-arrow-right text-warning me-2"></i>Meet The Team</a>
+                                    <a href="" class="text-white pt-3" style="text-decoration: none;"><i class="bi bi-arrow-right text-warning me-2"></i>Latest Blog</a>
+                                    <a href="" class="text-white pt-3" style="text-decoration: none;"><i class="bi bi-arrow-right text-warning me-2"></i>Contact Us</a>
+                                </div>  
+                            </div>
+                            <div class="col-lg-4 col-md-12 pt-0  mb-5">
+                                <h3 style="color: goldenrod;">NEWS LETTER</h3>
+                                <p class="pt-3 text-white">Amet justo diam dolor rebum lorem sit stet sea justo kasd</p>
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" placeholder="Your Email" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                    <div class="input-group-append">
+                                      <button class="btn btn-warning" type="button">Sign Up</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid pt-3 pb-3" style="background-color: black;">
+            <div class="container">
+                <div class="text-center">
+                    <div class="foot">
+                        <p style="text-decoration: underline;">© Your Site Name. All Rights Reserved. Designed by HTML Codex</p>
+                    </div>
+                    <div class="text-md-end">
+                        <a href="#" class="btn btn-warning border-inner py-3 fs-4 back-to-top"><i class="bi bi-arrow-up"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ </body>
+</html>
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/counterup/counterup.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+<!-- <div class="image-container">
+    <img src="images/birthday cake 1.jpg" class="card-img-top" alt="...">
+    <div class="team-overlay w-100 h-100 position-absolute top-50 start-50 translate-middle d-flex align-items-center justify-content-center">
+        <div class="d-flex align-items-center justify-content-start">
+            <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 mx-1" href="#"><i class="fab fa-twitter fw-normal"></i></a>
+            <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 mx-1" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+            <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 mx-1" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
+        </div>
+    </div>
+</div>
+<div class="card-body bg-dark border-inner" style="text-align: center;">
+    <h1 class="card-title" style="color: goldenrod;">FULL NAME</h1>
+    <p class="card-text text-white">Destignation</p>
+</div> -->
+
+<!-- <div class="position-relative overflow-hidden">
+    <img class="img-fluid" src="images/birthday cake 1.jpg"  alt="...">
+    <div class="team-overlay w-100 h-100 position-absolute top-50 start-50 translate-middle d-flex align-items-center justify-content-center">
+        <div class="d-flex align-items-center justify-content-start">
+            <a class="btn btn-lg btn-warning btn-lg-square border-inner rounded-0 mx-1" href="#"><i class="fab fa-twitter fw-normal"></i></a>
+            <a class="btn btn-lg btn-warning btn-lg-square border-inner rounded-0 mx-1" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+            <a class="btn btn-lg btn-warning btn-lg-square border-inner rounded-0 mx-1" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
+        </div>
+    </div>
+</div>
+<div class="card-body bg-dark border-inner" style="text-align: center;">
+    <h1 class="card-title" style="color: goldenrod;">FULL NAME</h1>
+    <p class="card-text text-white">Destignation</p>
+</div> -->
